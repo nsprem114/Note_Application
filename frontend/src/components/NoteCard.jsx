@@ -20,7 +20,6 @@ export default function NoteCard({ note, setNotes }) {
       toast.error("fail to delete note");
     }
   };
-  const handleEditNote = () => {};
   return (
     <Link
       to={`/notes/${note._id}`}

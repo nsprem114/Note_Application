@@ -20,7 +20,7 @@ export default function CreatePage() {
     }
     setLoading(true);
     try {
-      await api.post("http://localhost:5001/api/notes", { title, content });
+      await api.post("/notes", { title, content });
       toast.success("Note Created Successfully");
       navigate("/");
     } catch (error) {
